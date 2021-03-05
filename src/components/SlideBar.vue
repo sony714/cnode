@@ -12,10 +12,10 @@
         ><img :src="userinfo.avatar_url" alt="" />
       </router-link>
     </div>
-    <div class="recent_topics">
+    <div class="recent_replies">
       <div class="topbar">作者最近主题</div>
       <ul>
-        <li v-for="list in topcilimitby5">
+        <li v-for="list in replylimitby5">
           <router-link
             :to="{
               name: 'post_content',
@@ -24,8 +24,8 @@
                 name: list.author.loginname,
               },
             }"
-            >{{ list.title }}
-          </router-link>
+            >{{ list.title }}</router-link
+          >
         </li>
       </ul>
     </div>

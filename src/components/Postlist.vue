@@ -102,19 +102,23 @@ export default {
 </script>
 
 <style scoped>
-img {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-}
-
 .PostList {
   background-color: #e1e1e1;
 }
+.posts {
+  margin-top: 10px;
+}
+
+.PostList img {
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+
 ul {
   list-style: none;
   width: 100%;
-  max-width: 1344px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -134,11 +138,7 @@ li:not(:first-child):hover {
 }
 
 li:last-child:hover {
-  background-color: #f5f5f5;
-}
-
-li:last-child:hover {
-  background-color: white;
+  background: white;
 }
 
 li span {
@@ -151,6 +151,7 @@ li span {
   text-align: center;
   font-size: 12px;
 }
+
 .reply_count {
   color: #9e78c0;
   font-size: 14px;

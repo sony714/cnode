@@ -22,7 +22,8 @@ export default {
 
 <style>
 .main {
-  width: 80%;
   margin: 0 auto;
+  background-color: #e1e1e1;
+  padding: 0;
 }
 </style>

@@ -4,22 +4,22 @@
       <img src="../assets/loading.gif" />
     </div>
 
-    <div class="userInformation" v-else>
+    <div class="userInfomation" v-else>
       <section>
-        <img src="userinfo.avatar" alt="" />
+        <img :src="userinfo.avatar_url" alt="" />
         <span>{{ userinfo.loginname }}</span>
         <p>{{ userinfo.score }}积分</p>
-        <p>注册时间:{{ userinfo.create_at | formatDate }}</p>
+        <p>注册时间:{{ userinfo.create_at | formation }}</p>
       </section>
       <div class="replies">
-        <p>回复的主题</p>
+        <p>作者其他话题</p>
         <ul>
           <li v-for="item in userinfo.recent_replies">
             <router-link
               :to="{
-                name: 'post-content',
+                name: 'post_content',
                 params: {
-                  id: items.id,
+                  id: item.id,
                 },
               }"
             >

@@ -20,7 +20,7 @@
           <div class="replyUp">
             <router-link
               :to="{
-                name: 'user-info',
+                name: 'user_info',
                 params: {
                   name: reply.author.logonname,
                 },
@@ -30,7 +30,7 @@
             /></router-link>
             <router-link
               :to="{
-                name: 'user-info',
+                name: 'user_info',
                 params: {
                   name: reply.author.logonname,
                 },

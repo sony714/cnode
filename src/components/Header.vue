@@ -23,7 +23,9 @@ export default {
 <style scoped>
 .header {
   height: 50px;
-  background-color: #5a5555;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
 }
 img {
   max-width: 120px;
@@ -45,7 +47,7 @@ li {
 a {
   text-decoration: none;
   color: #ccc;
-  font-size: 14px;
+  font-size: 13px;
   text-shadow: none;
 }
 </style>
