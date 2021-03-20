@@ -14,7 +14,7 @@
             <span>招聘</span>
           </div>
         </li>
-        <li v-for="post in posts">
+        <li v-for="post in posts" v-bind:key="post">
           <img :src="post.author.avatar_url" alt="" />
           <span class="allcount">
             <span class="reply_count">{{ post.reply_count }}</span>

@@ -14,7 +14,7 @@
       <div class="replies">
         <p>作者其他话题</p>
         <ul>
-          <li v-for="item in userinfo.recent_replies">
+          <li v-for="item in userinfo.recent_replies" :key="item">
             <router-link
               :to="{
                 name: 'post_content',
@@ -31,7 +31,7 @@
       <div class="topics">
         <p>创建的主题</p>
         <ul>
-          <li v-for="item in userinfo.recent_topics">
+          <li v-for="item in userinfo.recent_topics" :key="item">
             <router-link
               :to="{
                 name: 'post_content',
